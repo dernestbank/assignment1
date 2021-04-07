@@ -11,6 +11,15 @@ git add " file name"
 
 git commit -m "message" /* to provide a small comment  to files in the stagging area */
 
+git branch /*To know the branch we are on */
+
+git remote add origin https://github.com/dernestbank/premest1.git
+
+
+
+
+
+
 git config --global user.email "dernestbank@yahoo.com"
 git config --global user.name "dernestbank"
 
