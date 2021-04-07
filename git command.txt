@@ -1,0 +1,7 @@
+git init  /* to initialize your project at first run*/
+
+git status /* to know the status of your file */
+
+git add . /*adds all files in the untracked */
+
+git add " file name"
