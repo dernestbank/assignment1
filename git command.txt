@@ -13,12 +13,25 @@ git commit -m "message" /* to provide a small comment  to files in the stagging 
 
 git branch /*To know the branch we are on */
 
+
+git clone -- to download a copy of
+git pull -- you want to update your copy of a project to the online
+merge   
+
+
+
+git push origin branchname
+
+//to link your project to the repositorylink
 git remote add origin https://github.com/dernestbank/premest1.git
 
 
+// before you whitch the branch
+
+git check out
 
 
-
+gitremoote set-url origin repositorylink
 
 git config --global user.email "dernestbank@yahoo.com"
 git config --global user.name "dernestbank"
