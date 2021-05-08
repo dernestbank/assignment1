@@ -1,0 +1,191 @@
+
+/* *{
+background-color: azure;
+
+} */
+
+.body{
+
+  margin:0;
+  padding:0;
+  
+  display:flex;
+  align-items:center;   
+  justify-content:center;
+  height:100vh;
+  background-color: rgb(131, 152, 163);
+  /* radial-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), */
+  background-image:url(backpic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
+  
+  
+  
+  }
+  
+  
+  
+  .Pane{
+  width: 300px; /* 40%; */
+  height: 450px; /* 65%; */
+  /* border:1px solid black; */
+  border:none;
+  border-radius:  25px;
+  /* h-offset/v-offset/blur/spreed/color */
+  box-shadow: -2px -2px 7px 4px #253642;
+  
+  display:flex;
+  /* to position the content inside the pane */
+  flex-direction: column;
+  justify-content:center; /* vertically*/
+  align-items:center; /* position horizontlly */
+  text-align: center;
+  
+  
+  
+  /* background: white; */
+  /* for the pane to be transparent with a gradiant effect between two colours */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgb(20, 4, 49) );
+  opacity: 0.7;
+  
+  
+  
+  }
+  
+  .Pane:hover{
+      /* to make signin pane solid when the cursor hovers on it */
+  opacity: 1;
+  transition:0.25s;
+  
+  }
+  
+  .Pane h1{
+      /* where i get to format the login name */
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-bottom: 4px solid #2ecc71;;
+      padding-bottom: 6px;
+  
+  
+    }
+  
+  /* i get to format my input style  */
+    .Pane input[type="text"], .Pane input[type="password"] {
+      border:0;
+      background: none;
+      color: white;
+      /* display: block; */
+      padding: 14px 10px;
+      margin: 10px;
+      box-shadow: none;
+      border: 2px solid #3498db;
+      border-radius: 25px;
+      outline:none;
+      width: 200px;
+      transition: 0.70s;
+  
+  
+      /* an attemp to being the usename and password inputs down the pane */
+      display: flex;
+      justify-self: flex-end;
+    }
+  
+    /* i customise the reaction after selecting*/
+  .Pane input[type="text"]:focus, .Pane input[type="password"]:focus {
+  
+          width: 250px;
+          border-color:  #2ecc71;
+  
+  }
+  
+/* an attempt to move the label */
+
+
+
+
+  /* where i design the submit  button */
+  .Pane input[type="submit"]{
+    
+      background: none;
+      color: white;
+      outline: none;
+      box-shadow: none;
+      /* display: block; */
+      padding: 14px 40px;
+      margin: 20px auto;
+      border: 2px solid #2ecc71;
+      border-radius: 25px;
+      text-align: center;
+      transition:   1s;
+      cursor: pointer;
+  
+  
+      /* an attempt to bring the login down to the pane */
+      /* display: flex;
+      justify-self: flex-end;
+      align-self: flex-end; */
+  }
+  
+  .Pane input[type = "submit"]:hover{
+      background: #2ecc71;
+      position:relative;
+      top:-6px;
+      transition: 0.50s;
+      /* i want to bring a glow to the submit button */
+      /* box-shadow:auto; */
+      box-shadow: 0 0 5px #2ecc71,
+                  /* 0 0 25px #2ecc71, */
+                  0 0 50px #03e9f4;
+      /* box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4; */
+    }
+  
+
+
+
+
+    /* i want to add an animation to my login */
+
+
+    /* The animation code */
+@keyframes loginbar1 {
+  from { border-color:#08d45d; }
+  to { border-color: #eb33f1;}
+
+  /* 0%   {border-color:blue;}
+  25%  {border-color: yellow;}
+  50%  {border-color: blue;}
+  100% {border-color: green;} */
+}
+
+
+/* The element to apply the animation to */
+/* I want the border-bottom to change colour upon loading */
+.Pane h1{
+  border-color: #3498db;
+  animation-name: loginbar1;
+  animation-duration: 2s;
+ 
+}
+
+
+/* The element to apply the animation to */
+/* I want it to drop from the sky */
+.Pane {
+
+  animation: panedrop 2s;
+}
+
+
+
+@keyframes panedrop {
+  0% {transform: translateY(-1000px);
+
+    }
+  /* 70% {transform:translateY(700px)} */
+  100% {transform: translateY(0px)}
+  
+}
