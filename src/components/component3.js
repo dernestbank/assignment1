@@ -19,4 +19,4 @@ function Component3 () {
 };
 
 
-export default Componet3 ;
+export default Component3 ;
