@@ -1,15 +1,39 @@
 
-/* *{
-background-color:burlywood
+.full{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
 
-} */
-
-
-
-.item1{
-
-    color:blue;
 }
+
+.leftpane{
+display: flex;
+flex: 0.3
+
+}
+
+.rightpane{
+    display: flex;
+    flex:0.7;
+    flex-direction: column;
+}
+
+.rightTop{
+    display: flex;
+    flex:0.2;
+
+}
+
+.rightMain{
+    display: flex;
+    flex:0.8;
+
+
+}
+
 
 
 

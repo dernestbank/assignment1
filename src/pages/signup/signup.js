@@ -4,7 +4,7 @@ import mysignup from "./signup.module.css"
 
 import { useState } from 'react'
 
-import signupImage from "./girl.jpg";
+import signupImage from "./animpic.gif";
 
 
 function Signup() {
@@ -77,53 +77,70 @@ function Signup() {
 
                                 <div className={mysignup.middleLeft}>
                                     {/* <form action=""> */}
+
+                                    <div>
                                        
-                                        <div>
-                                        <label >First Name</label>
                                         <input type="text" name="" id="" />
-                                        </div>
+                                        <label className={mysignup.floatlabel}>First Name</label>
+                                    </div>
 
 
-                                        <div>
-                                        <label htmlFor="">Email</label>
-                                        <input type="email" name="" id="" />
-                                        </div>
-                                       
-                                        <div class="country-form-group">
-                                            <label for="">Country</label>
-                                            <select class="form-control" name="" id="">
-                                                <option>Ghana</option>
-                                                <option>Nigeria</option>
-                                                <option>USA</option>
-                                            </select>
-                                        </div>
+                                    <div>
                                         
+                                        <input type="email" name="" id="" />
+                                        <label htmlFor="">Email</label>
+                                    </div>
 
-
+                                    <div >
                                        
 
+                                        <select class="form-control" name="" id="">
+                                            <option>Ghana</option>
+                                            <option>Nigeria</option>
+                                            <option>USA</option>
+                                        </select>
+                                        
+                                        <label className={mysignup.country_form_group} >Country</label>
+                                    </div>
 
-                                        <label htmlFor="">Password</label>
+                                    <div>
+                                       
                                         <input type="password" name="" id="" />
-sdfgdsf
+                                        <label >Password</label>
+                                    </div>
                                     {/* </form> */}
 
-dgsdfgsdfgsdfgsdfgsdfg
                                 </div>
+
 
                                 <div className={mysignup.middleRight}>
                                     {/* <form > */}
-                                        <label htmlFor="">Surname</label>
-                                        <input type="text" name="" id="" />
-                                        <label htmlFor="">Phone Number</label>
-                                        <input type="tel" name="" id="" />
-                                        <label htmlFor="">City</label>
-                                        <input type="text" name="" id="" />
-                                        <label htmlFor="">confirm password</label>
-                                        <input type="password" name="" id="" />
-zvcxbxcvb
+                                        <div>
+                                   
+                                    <input type="text" name="" id="" />
+                                    <label htmlFor="">Surname</label>
+                                    </div>
+
+                                    <div>
+                                   
+                                    <input type="tel" name="" id="" />
+                                    <label htmlFor="">Phone Number</label>
+                                    </div>
+
+                                    <div>
+                                    
+                                    <input type="text" name="" id="" />
+                                    <label htmlFor="">City</label>
+                                    </div>
+
+                                    <div>
+                                   
+                                    <input type="password" name="" id="" />
+                                    <label htmlFor="">confirm password</label>
+                                    </div>
+
                                     {/* </form> */}
-xbxcvbxcvb
+
                                 </div>
                             </div>
 
@@ -131,20 +148,22 @@ xbxcvbxcvb
 
                             <div className={mysignup.centerBottom}>
 
-                                {/* <form action=""> */}
-                                    <label htmlFor="">Gender</label>
-                                    <input type="radio" name="" id="" />
-                                    <label htmlFor="">Male</label>
-                                    <input type="radio" name="" id="" />
-                                    <label htmlFor="">Female</label>
-                                    <input type="radio" name="" id="" />
-                                    <label htmlFor="">Other</label>
-                                    <input type="radio" name="" id="" />
+                                <form action="">
+                                <label htmlFor="">Gender</label>
+                                <input type="radio" name="" id="" />
+                                <label htmlFor="">Male</label>
+                                <input type="radio" name="" id="" />
+                                <label htmlFor="">Female</label>
+                                <input type="radio" name="" id="" />
+                                <label htmlFor="">Other</label>
+                                <input type="radio" name="" id="" />
+
 
                                 
-                                    <button type="submit">Submit</button>
 
-                                {/* </form> */}
+                                </form>
+
+                                <button type="submit">Submit</button>
                             </div>
 
 

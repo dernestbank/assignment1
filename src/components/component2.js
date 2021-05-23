@@ -6,6 +6,8 @@ const Component2 = () => {
         <div>
                     my second component
 
+                    
+
         </div>
         
         

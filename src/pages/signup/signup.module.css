@@ -13,9 +13,7 @@ margin:0px;
     justify-content: center;
     align-items: center;
     /* align-content: center; */
-    height: 100vh;
-    width: 100vw;
-    background-image: url(./backpic.jpg);
+    background-image: url(./backpic.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -27,53 +25,50 @@ margin:0px;
     justify-content: center;
     align-items: center;
     
-    height: 600px;
-    width: 950px;
-
-    min-width:500px;
-    min-width:500px;
+    height: 80%;
+    width: 70%;
 
     display: flex;
 }
 
 
 .smallCenter{
-    background-color: yellowgreen;
-    height: 96%;
-    width: 96%;
+    /* background-color: yellowgreen; */
+
+    background: url("./waves-shape-divider.jpg"), rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 98%;
+    width: 99%;
     display: inherit;
-    /* flex-basis: 1; */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-direction:row */
+
 }
 
 .leftCenter{
-    background-color:lightcoral;
+    /* background-color:white; */
     flex:0.45;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 
 }
 
 .rightCenter{
-    background:lightslategrey;
-    flex:0.65;
-    /* display: inline-flex; */
-    display:inline-flex;
+    /* background:lightslategrey; */
+    /* background: url("./waves-shape-divider.jpg");
+    background-repeat: no-repeat;
+    background-size:cover; */
+
+    flex:0.55;
+    display: flex;
     flex-direction:column;
-    /* align-items: center; */
-    /* justify-content: */
-    height: 100%;
-    /* flex-wrap: wrap; */
+
     
 }
 
 .centerTop{
-    background-color:maroon;
+    /* background-color:rgb(61, 59, 59); */
     flex:0.2;
     display: flex;
     align-items: center;
@@ -83,43 +78,76 @@ margin:0px;
 
 
 .centerMiddle {
-    background-color:mediumorchid;
+    /* background-color:mediumorchid; */
+    /* background: url("./waves-shape-divider.jpg"); */
+    background-repeat: none;
+    background-size: cover;
     flex: 0.6;
     display: flex;
-    /* height: 100%; */
 
-    /* align-items: center; */
 }
 
 .centerBottom{
-    background-color:moccasin;
-    flex:0.3;
+    /* background :url('./down.png');
+    background-repeat: no-repeat;
+    background-size:100%; */
+    flex:0.2;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.centerBottom > form {
+    
+}
 
 .middleLeft{
     flex:0.5;
     display: flex;
-    background:hotpink;
-    /* align-items: center; */
-    justify-content: center;
+    /* background:rgb(177, 101, 101);
+     */
+    flex-direction: column;
+    align-items: start; 
+    justify-content: space-evenly;
 
 }
 .middleLeft > div{
-    background-color:mi
+    /* background-color:mi */
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items:start; */
+    padding-left: 30px;
+
+    position: relative;
 }
 
 .middleRight{
 flex:0.5;
-background:midnightblue
+background:rgb(248, 248, 248)ue;
+display:flex;
+flex-direction:column;
+align-items: start;
+justify-content: space-evenly;
 }
 
+.middleRight >div{
+    display:flex;
+    flex-direction: column;
+    /* align-items: start;
+    justify-content: space-evenly; */
+    padding-left: 30px;
 
+    position: relative;
+}
 
 .leftCenter img {
-    width: 200px;
-    height: 200px;    
+    width: 80%;
+    height: 60%;
+    position:relative;
+    top: -60px;
+    
 }
 
 
@@ -133,3 +161,133 @@ background:midnightblue
     border-bottom: 4px solid #2ecc71;;
     padding-bottom: 6px;
 }
+
+.middleLeft div input, .middleLeft div select {
+    display: flex;
+    /* width: 100%; */
+  
+    /* padding: 10px 0; */
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #291d6d;   
+    background-color: transparent;
+}
+
+.middleLeft div input, .middleLeft div select option { 
+    colour: black;
+    background: transparent;
+}
+
+.middleLeft div input:focus, .middleLeft div select :focus {
+
+    border-bottom: 2px solid #2ecc71;   
+
+
+}
+
+/* this selects the labels on the left */
+.middleLeft div label , .middleRight div label{
+    display:flex;
+    position: absolute;
+    top: -5px;
+    bottom: 0;
+
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+
+
+  }
+
+/* to adjust the label for the country select */
+.country_form_group{
+    position: relative;
+    top: -15px;
+}
+
+
+.middleRight div input {
+    width: 100%;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid #291d6d;
+    background-color: transparent;
+}
+
+.middleRight div input:focus, .middleRight div select :focus {
+
+    border-bottom: 2px solid #2ecc71;   
+
+
+}
+
+
+/* so i want to cause my label to decrease in size and shiffte up form the input field when input field is selected */
+
+  
+  .middleLeft div input:focus + label, .middleRight div input:focus + label{
+      position: absolute;
+      top: -30px;
+  }
+
+  /* input:focus +label {
+    top: -30px;
+  } */
+    .middleLeft div input:focus + label, .middleLeft div input:valid + label {
+    /* display:flex;
+    position: relative;
+    top: -20px; */
+
+    /* left: 0; */
+    /* transform: translateY(-3.2em); */
+    /* color: #03e9f4; */
+    /* font-size: 302px; */
+  }
+  
+/* input:focus ~ label{
+    color: #03e9f4;
+    font-size: 32px;
+} */
+
+  /* .middleLeft div input:valid ~ label {
+    display:flex;
+    top: -20px;
+    color: #03e9f4;
+    font-size: 32px;
+  } */
+
+
+
+/* animatemy submit button */
+
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen(max-width: 480px) {
+      
+  }
