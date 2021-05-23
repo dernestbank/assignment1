@@ -1,7 +1,7 @@
 import React from 'react'
 import Dashboard from './Dashboard'
 
-function Signup() {
+function Signupx() {
     return (
         <div>
             
@@ -14,4 +14,4 @@ function Signup() {
     )
 }
 
-export default Signup
+export default Signupx

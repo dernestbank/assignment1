@@ -5,6 +5,8 @@ import {Switch,Route} from "react-router-dom";
 
 // import Componentall from "./components/componentall.js";
 
+
+
 import Signup from "./Assignment3/Signup";
 import Dashboard from "./Assignment3/Dashboard"
 
@@ -12,6 +14,7 @@ import Notification from './Assignment3/Notification'
 
 import Phones from "./Jumia/Phones";
 import Watches from "./Jumia/Watches";
+import Signupx from "./Assignment3/Signup";
 
 
 function App() {
@@ -36,9 +39,10 @@ function App() {
       // </switch>
 
 
+<>
 
-/* < Signupx />  */
-
+ <Signupx />
+</>
 // {/* < Notification/> */}
             // <>
 
@@ -61,18 +65,18 @@ function App() {
             // <Signup />
 
       
-          <div className="assignment4">
-            <switch>
+          // <div className="assignment4">
+          //   <switch>
 
-            <Route exact path = "/" component={Phones} />
+          //   <Route exact path = "/" component={Phones} />
 
-            <Route exact path = "/watches" component={Watches} />
+          //   <Route exact path = "/watches" component={Watches} />
 
-            </switch>
+          //   </switch>
 
 
 
-          </div>
+          // </div>
 
 
 
